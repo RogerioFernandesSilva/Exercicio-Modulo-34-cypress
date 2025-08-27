@@ -9,8 +9,8 @@ describe('Agenda de Contatos - Testes', () => {
 
   // 🟢 Inclusão de Contatos
   it('Deve adicionar um contato válido', () => {
-    cy.get('input[type="text"]').type('João Silva');
-    cy.get('input[type="email"]').type('joao@email.com');
+    cy.get('input[type="text"]').type('Roberval Silveira');
+    cy.get('input[type="email"]').type('roberval@ig.com');
     cy.get('input[type="tel"]').type('51981205709');
     cy.contains('Adicionar').click();
     cy.screenshot("teste-incluir")
